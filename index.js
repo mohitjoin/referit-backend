@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.send('This is up and running server of Nodejs for refer-it app')
 })
 
-app.listen(port, (err) => {
+app.listen(process.env.PORT || port, (err) => {
     if (err)
         console.log('There is an error inn running');
 
